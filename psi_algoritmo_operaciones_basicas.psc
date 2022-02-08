@@ -9,4 +9,5 @@ Algoritmo operaciones_basicas
 	Escribir "la resta de ambos números es: ", valor1-valor2
 	Escribir "la multiplicación de ambos números es: ", valor1*valor2
 	Escribir "la división de ambos números es: ", valor1/valor2
+	Escribir "Hola Juan"
 FinAlgoritmo
