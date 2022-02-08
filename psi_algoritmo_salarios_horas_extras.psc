@@ -1,29 +1,32 @@
 Algoritmo sin_titulo
-	definir horastrabajadas,precio,salario,extra,salariototal como real
-	definir seleccion como caracter
-	Escribir "Cuantos trabajadores desea calcular el salario"
-	seleccion = "si"
-	salariototal = 0
-	Trabajadores = 0
-	Mientras seleccion="si" o seleccion="s" Hacer
-		Escribir "Digita las horas trabajadas y el precio por hora"
-		Escribir "horas trabajadas"
+	Definir horastrabajadas,precio,salario,extra,salariototal Como Real
+	Definir seleccion Como Caracter
+	Escribir 'Cálculo de salario según horas trabajadas por semana'
+	Escribir lista_de_expresiones
+	seleccion <- 'si'
+	salariototal <- 0
+	trabajadores <- 0
+	Mientras seleccion='si' O seleccion='s' Hacer
+		Escribir 'Digita las horas trabajadas por semana y el precio por hora'
+		Escribir lista_de_expresiones
+		Escribir 'horas trabajadas'
 		Leer horastrabajadas
-		Escribir "Precio por hora"
+		Escribir 'Precio por hora'
 		Leer precio
 		Si horastrabajadas>40 Entonces
-			extra = horastrabajadas-40
-			salario=(40*precio+(1.5*(extra*precio)))
+			extra <- horastrabajadas-40
+			salario <- (40*precio+(1.5*(extra*precio)))
 		SiNo
-			salario = horastrabajadas*precio
+			salario <- horastrabajadas*precio
 		FinSi
-		Escribir "El salario es: ", salario
-		salariototal = salario+salariototal
-		trabajadores = trabajadores+1
-		Escribir "Desea continuar? (si/no)"
+		Escribir 'El salario devengado es: ',salario,' con ',extra,' horas extras trabajadas'
+		salariototal <- salario+salariototal
+		trabajadores <- trabajadores+1
+		Escribir 'Desea continuar otro calculo? (si/no)'
 		Leer seleccion
-		Mientras seleccion<>"si" o seleccion<>"no" Hacer
-			Escribir "Por favor digitar correctamente si o no"
+		Mientras seleccion<>'si' O seleccion<>'no' Hacer
+			Escribir 'Por favor digitar correctamente si o no'
+			Leer seleccion
 		FinMientras
 	FinMientras
 FinAlgoritmo
