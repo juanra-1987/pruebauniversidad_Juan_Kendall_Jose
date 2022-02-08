@@ -10,4 +10,5 @@ Algoritmo operaciones_basicas
 	Escribir "la multiplicación de ambos números es: ", valor1*valor2
 	Escribir "la división de ambos números es: ", valor1/valor2
 	Escribir "Hola Juan"
+	escribir "hola"
 FinAlgoritmo
