@@ -7,6 +7,7 @@ Algoritmo sin_titulo
 	salariototal <- 0
 	trabajadores <- 0
 	Mientras seleccion='si' Hacer
+		extra = 0
 		Escribir 'Digita las horas trabajadas por semana y el precio por hora'
 		Escribir '***************************'
 		Escribir 'horas trabajadas'
@@ -25,6 +26,6 @@ Algoritmo sin_titulo
 		Repetir
 			Escribir 'Desea continuar otro cálculo? (si/no)'
 			Leer seleccion
-		Hasta Que seleccion="si"o seleccion="no"
+		Hasta Que seleccion='si' O seleccion='no'
 	FinMientras
 FinAlgoritmo
