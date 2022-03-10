@@ -18,13 +18,14 @@ for i in [1,2,3,4,5,6,7,8,9,10]:
                 print ("Por ser menor de 4 años, entra GRATIS")
                 break
             elif edad>4 and edad< 18:
-                print("Debe cancelar un monto de 4 Euros")
+                print("Debe cancelar un monto de 5 Dólares")
                 break
             else:
-                print ("El monto de la entrada para su edad es 10 Euros")   
+                print ("El monto de la entrada para su edad es 10 Dólares")   
                 break 
         else:
             print("Verifique el dato ingresado")
     else:
         print ("El dato digitado no corresponde a un número valido")
         print (f"\tIntento {i} de 10")
+
